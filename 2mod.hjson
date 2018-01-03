@@ -1,0 +1,36 @@
+{
+  modInfo:
+  {
+    id: BlackChocolate
+    name: BlackChocolate
+    authors: George
+    version: "1.0"
+    enabled: true
+    defaultLang: en
+  },
+  imageData:[
+        {
+            id: TehChocolate.png
+            file: BlackChocolate/TehChocolate.png
+        }
+    ],
+  modEntries:[
+        {
+            id: it-BlackChocolate
+            name: txt-it-BlackChocolate-name
+            description: txt-it-BlackChocolate
+            sprite: TehChocolate.png
+            debugCategory: sanity
+            value: 1
+            maxStack: 1
+            useEvents: {
+                sanity: 200
+                removeItem : false
+            }
+        }
+         {
+            targetId: *sp-David-Neel::items
+            it-BlackChocolate: 1
+        }
+        ]
+}
