@@ -1,0 +1,36 @@
+{
+  modInfo:
+  {
+    id: myMod
+    name: ReallyGoodChocolate
+    authors: NeoTheVoid
+    version: "1.0"
+    enabled: true
+    defaultLang: en
+  },
+  imageData:[
+        {
+            id: TehChocolate.png
+            file: myMod/TehChocolate.png
+        }
+    ],
+  modEntries:[
+        {
+            id: it-ReallyGoodChocolate
+            name: txt-it-ReallyGoodChocolate-name
+            description: txt-it-ReallyGoodChocolate
+            sprite: TehChocolate.png
+            debugCategory: sanity
+            value: 1
+            maxStack: 99
+            useEvents: {
+                sanity: 100
+                removeItem : false
+            }
+        }
+         {
+            targetId: *sp-David-Neel::items
+            it-ReallyGoodChocolate: 1
+        }
+        ]
+}
