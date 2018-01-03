@@ -1,0 +1,15 @@
+{
+	modInfo:
+	{
+		id: 20Trekmembers
+		name: 20 Trekmembers
+		authors: BlackCobra
+		version: "1.0.0.0"
+		description: "Increase the Trekmembers to 20"
+		defaultLang: en
+	},
+	imageData:[],
+	configSettings:{
+		maxUnitCount: 20,
+		uimaxUnitCount: 21
+	}
